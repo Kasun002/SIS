@@ -2,6 +2,7 @@
 #define CONTROLLER_H
 
 #include <QMainWindow>
+#include <QTabWidget>
 
 namespace Ui {
 class Controller;
@@ -17,6 +18,8 @@ public:
 
 private:
     Ui::Controller *ui;
+
+
 };
 
 #endif // CONTROLLER_H

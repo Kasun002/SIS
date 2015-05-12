@@ -13,8 +13,17 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    registeruser.cpp \
+    newshipdetect.cpp \
+    controller.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    registeruser.h \
+    newshipdetect.h \
+    controller.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    registeruser.ui \
+    newshipdetect.ui \
+    controller.ui

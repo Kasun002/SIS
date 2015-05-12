@@ -6,6 +6,8 @@ Controller::Controller(QWidget *parent) :
     ui(new Ui::Controller)
 {
     ui->setupUi(this);
+
+
 }
 
 Controller::~Controller()

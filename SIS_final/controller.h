@@ -2,24 +2,21 @@
 #define CONTROLLER_H
 
 #include <QMainWindow>
-#include <QTabWidget>
 
 namespace Ui {
-class Controller;
+class controller;
 }
 
-class Controller : public QMainWindow
+class controller : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit Controller(QWidget *parent = 0);
-    ~Controller();
+    explicit controller(QWidget *parent = 0);
+    ~controller();
 
 private:
-    Ui::Controller *ui;
-
-
+    Ui::controller *ui;
 };
 
 #endif // CONTROLLER_H

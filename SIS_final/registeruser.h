@@ -1,22 +1,22 @@
 #ifndef REGISTERUSER_H
 #define REGISTERUSER_H
 
-#include <QDialog>
+#include <QMainWindow>
 
 namespace Ui {
-class registerUser;
+class registeruser;
 }
 
-class registerUser : public QDialog
+class registeruser : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit registerUser(QWidget *parent = 0);
-    ~registerUser();
+    explicit registeruser(QWidget *parent = 0);
+    ~registeruser();
 
 private:
-    Ui::registerUser *ui;
+    Ui::registeruser *ui;
 };
 
 #endif // REGISTERUSER_H

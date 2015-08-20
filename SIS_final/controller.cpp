@@ -1,16 +1,14 @@
 #include "controller.h"
 #include "ui_controller.h"
 
-Controller::Controller(QWidget *parent) :
+controller::controller(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::Controller)
+    ui(new Ui::controller)
 {
     ui->setupUi(this);
-
-
 }
 
-Controller::~Controller()
+controller::~controller()
 {
     delete ui;
 }

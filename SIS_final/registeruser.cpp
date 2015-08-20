@@ -1,14 +1,14 @@
 #include "registeruser.h"
 #include "ui_registeruser.h"
 
-registerUser::registerUser(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::registerUser)
+registeruser::registeruser(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::registeruser)
 {
     ui->setupUi(this);
 }
 
-registerUser::~registerUser()
+registeruser::~registeruser()
 {
     delete ui;
 }

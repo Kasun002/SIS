@@ -1,0 +1,13 @@
+****************************************************************************
+* NCReport 2.16.0
+* Release date: 21.Jul.2015
+* Features and bugfixes are tracked at http://tracker.ncreport.org
+****************************************************************************
+
+- 0071433: [Report engine library] Conditional formatting for Shapes (Rectangle, ellipse, line) (administrator) - resolved.
+- 0071761: [General] To make Field settings dialog customisable for managing custom options. (administrator) - resolved.
+- 0071777: [General] Dynamic, data driven shape color and line width (administrator) - resolved.
+- 0071775: [General] Dynamic, data driven x, y positions and height (administrator) - resolved.
+- 0071542: [Report engine library] Change page orientation while printing (administrator) - resolved.
+- 0071753: [Designer] Designer: z-value when inserting items (administrator) - resolved.
+- 0071776: [General] Field: Data Type 'Duration' (administrator) - resolved.

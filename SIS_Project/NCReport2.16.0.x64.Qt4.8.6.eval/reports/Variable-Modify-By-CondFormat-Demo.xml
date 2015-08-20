@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.15.0" name="Untitled" type="report">
+    <options>
+        <encoding>utf8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <fontname>Liberation Sans</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+    </options>
+    <datasources>
+        <datasource id="DataSource1" allowEmpty="true" type="txt" openRole="begin" source="static" columnDelimiter="tab" encoding="UTF-8">45	23	#421405	1	10
+18	5	#cccccc	1	12
+79	54	#421405	0	12
+18	10	#0000ff	0	8
+33	12	#00ff00	0	10
+67	51	#ff0000	1	8
+36	11	#000000	0	14
+14	6	cornflowerblue	1	10
+24	32	darkgoldenrod	0	10
+58	54	blueviolet	0	10
+66	11	darkolivegreen	0	10
+165	67	mediumpurple	1	10
+399	98	orangered	0	10
+170	63	peachpuff	0	10</datasource>
+    </datasources>
+    <variables>
+        <variable id="v2" type="num" funcType="sum" scope="report" initValue="0">col0</variable>
+        <variable id="v3" type="num" funcType="sum" scope="report" initValue="0">col0</variable>
+        <variable id="v1" type="num" funcType="count" scope="report" initValue="0">col0</variable>
+    </variables>
+    <scripts/>
+    <pageheader id="phead" height="21.431">
+        <label id="5ZY4H" zValue="0" posX="0.000" posY="0.000" width="84.137" height="6.350" fontName="Liberation Sans" fontSize="12" fontWeight="bold" alignment="1">Conditional text formatting demo</label>
+        <label id="1" zValue="1" posX="0.000" posY="7.938" width="139.700" height="12.700" fontName="Liberation Sans" fontSize="10" alignment="1" wordbreak="true">Fields and Labels can dynamically change their format by data source values, parameters or script expressions</label>
+    </pageheader>
+    <pagefooter id="pfoot" height="10.583"/>
+    <details>
+        <detail id="Detail1" height="5.292" datasource="DataSource1">
+            <items>
+                <label id="1" zValue="1" posX="0.000" posY="0.000" width="68.263" height="4.762" fontName="Liberation Sans" fontSize="10" bgMode="fb" backcolor="#ffffff" cf="1">
+                    <tr>Lorem ipsum </tr>
+                    <cf>font-bold:{if($D{col1}&gt;20) true; else false;}
+$V{v3}+=2
+</cf>
+                </label>
+                <field id="HTPFP" typeId="131074" zValue="7" posX="88.900" posY="0.000" width="17.462" height="4.762" resource="var" fontName="Liberation Sans" fontSize="10" alignment="34" type="txt" ftype="var">v2</field>
+                <field id="N7Q30" typeId="131074" zValue="8" posX="71.438" posY="0.000" width="13.229" height="4.762" resource="var" fontName="Liberation Sans" fontSize="10" alignment="34" type="txt" ftype="var">v1</field>
+                <field id="ROE94" typeId="131074" zValue="9" posX="149.225" posY="0.000" width="20.637" height="4.762" resource="var" fontName="Liberation Sans" fontSize="10" alignment="34" type="num" ftype="var" formatting="true" numwidth="0" format="f" precision="2" localized="true">v3</field>
+            </items>
+        </detail>
+    </details>
+</NCReport>

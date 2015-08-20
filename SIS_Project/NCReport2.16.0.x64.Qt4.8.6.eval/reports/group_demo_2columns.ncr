@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.15.0" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <fontname>Ubuntu</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+    </options>
+    <datasources>
+        <datasource id="ds" allowEmpty="true" type="txt" openRole="begin" source="static" columnDelimiter="tab" hasColumnHeader="true" encoding="UTF-8">id1	id2	name
+2	3	Charlie
+3	2	Peter
+1	4	Eve
+4	6	Jenett
+5	5	Adrian
+2	1	Charlotte</datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="11.906">
+        <label id="VSB9B" zValue="0" posX="0.000" posY="0.000" width="79.375" height="4.762" fontName="Ubuntu" fontSize="10" fontWeight="bold" forecolor="#000000">Group by 2 columns</label>
+        <label id="CXBOL" zValue="1" posX="0.000" posY="4.762" width="31.750" height="4.762" fontName="Ubuntu" fontSize="10" forecolor="#000000">Group: ID1 + ID2</label>
+    </pageheader>
+    <pagefooter id="PF" height="10.000"/>
+    <details>
+        <detail id="Detail1" height="5.027" datasource="ds">
+            <items>
+                <field id="8FD9X" typeId="131074" zValue="0" posX="0.000" posY="0.000" width="14.287" height="4.762" description="id1" resource="datasource" fontName="Ubuntu" fontSize="10" type="txt" ftype="ds">id1</field>
+                <field id="0R2HF" typeId="131074" zValue="1" posX="15.875" posY="0.000" width="14.287" height="4.762" description="id2" resource="datasource" fontName="Ubuntu" fontSize="10" type="txt" ftype="ds">id2</field>
+                <field id="KPYYQ" typeId="131074" zValue="2" posX="33.337" posY="0.000" width="49.212" height="4.762" description="name" resource="datasource" fontName="Ubuntu" fontSize="10" type="txt" ftype="ds">name</field>
+            </items>
+            <groups>
+                <group id="Group0" groupExp="&lt;% $D{ds.id1} + $D{ds.id2} %&gt;" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader height="5.821">
+                        <label id="NBCE3" zValue="0" posX="0.000" posY="0.000" width="14.287" height="4.762" fontName="Ubuntu" fontSize="10" forecolor="#000000">ID1</label>
+                        <label id="9KF7T" zValue="1" posX="15.875" posY="0.000" width="14.287" height="4.762" fontName="Ubuntu" fontSize="10">ID2</label>
+                        <label id="QW0DH" zValue="4" posX="33.337" posY="0.000" width="31.750" height="4.762" fontName="Ubuntu" fontSize="10">Name</label>
+                    </groupheader>
+                    <groupfooter height="4.000"/>
+                </group>
+            </groups>
+        </detail>
+    </details>
+</NCReport>

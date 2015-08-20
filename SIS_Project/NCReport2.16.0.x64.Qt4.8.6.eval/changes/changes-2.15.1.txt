@@ -1,0 +1,12 @@
+****************************************************************************
+* NCReport 2.15.1
+* Release date: 08.Jun.2015
+* Features and bugfixes are tracked at http://tracker.ncreport.org
+****************************************************************************
+
+- 0071773: [Report engine library] Dynamic image file names not considered sometimes in case you select 'File' source type (administrator) - resolved.
+- 0071772: [General] Minor fixes, updates and adjustments (administrator) - resolved.
+- 0071666: [Designer] Support for dynamic/custom string element (administrator) - resolved.
+- 0071771: [Report engine library] Crash in standard-deviation (administrator) - resolved.
+- 0071761: [General] To make Field settings dialog customisable for managing custom options. (administrator) - resolved.
+- 0071768: [Designer] Expression-Builder in Barcode-Properies-Dialog (administrator) - resolved.

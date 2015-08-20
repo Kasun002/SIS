@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.15.1" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <fontname>Ubuntu</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+    </options>
+    <datasources>
+        <datasource id="dt01" allowEmpty="true" type="txt" openRole="begin" source="static" columnDelimiter="tab" hasColumnHeader="true" encoding="UTF-8">name	msec	sec	min	hour
+time1	1664	25	7	4
+time2	2201	34	54	2</datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="17.198">
+        <label id="VSB9B" zValue="0" posX="0.000" posY="0.000" width="55.562" height="4.762" fontName="Ubuntu" fontSize="10" fontWeight="bold" alignment="1">Time format demo</label>
+        <label id="HHADC" zValue="22" posX="31.750" posY="9.525" width="15.875" height="4.762" fontName="Ubuntu" fontSize="10">MSec.</label>
+        <label id="0HQ4P" zValue="23" posX="49.212" posY="9.525" width="15.875" height="4.762" fontName="Ubuntu" fontSize="10">Sec.</label>
+        <label id="5BBNX" zValue="24" posX="66.675" posY="9.525" width="15.875" height="4.762" fontName="Ubuntu" fontSize="10">Min.</label>
+        <label id="26XGT" zValue="25" posX="84.137" posY="9.525" width="15.875" height="4.762" fontName="Ubuntu" fontSize="10">Hour</label>
+        <label id="QDJND" zValue="26" posX="0.000" posY="9.525" width="26.987" height="4.762" fontName="Ubuntu" fontSize="10">Convert from:</label>
+        <line id="HK6NV" zValue="27" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="0.000" fromY="15.875" toX="101.600" toY="15.875"/>
+    </pageheader>
+    <pagefooter id="PF" height="3.175"/>
+    <details>
+        <detail id="Detail1" height="6.085" datasource="dt01">
+            <items>
+                <field id="39KF7" typeId="131074" zValue="0" posX="0.000" posY="0.000" width="26.987" height="4.762" description="name" resource="datasource" fontName="Ubuntu" fontSize="10" fontWeight="bold" alignment="1" type="txt" ftype="ds">dt01.name</field>
+                <field id="T7UHB" zValue="1" posX="31.750" posY="0.000" width="15.875" height="4.762" resource="datasource" fontName="Ubuntu" fontSize="10" alignment="1" type="time" ftype="ds" dateFormat="hh:mm:ss|z">msec</field>
+                <field id="VSB9B" zValue="2" posX="49.212" posY="0.000" width="15.875" height="4.762" resource="datasource" fontName="Ubuntu" fontSize="10" type="time" ftype="ds" dateFormat="hh:mm:ss|s">sec</field>
+                <field id="UNBCE" zValue="3" posX="66.675" posY="0.000" width="15.875" height="4.762" resource="datasource" fontName="Ubuntu" fontSize="10" type="time" ftype="ds" dateFormat="hh:mm:ss|m">min</field>
+                <field id="9KF7T" zValue="4" posX="84.137" posY="0.000" width="15.875" height="4.762" resource="datasource" fontName="Ubuntu" fontSize="10" type="time" ftype="ds" dateFormat="hh:mm:ss|h">hour</field>
+            </items>
+        </detail>
+    </details>
+</NCReport>

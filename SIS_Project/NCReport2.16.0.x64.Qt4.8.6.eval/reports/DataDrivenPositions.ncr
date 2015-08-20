@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.15.1" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <fontname>Ubuntu</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+    </options>
+    <datasources>
+        <datasource id="dt2" allowEmpty="true" type="txt" openRole="begin" source="static" columnDelimiter="tab" hasColumnHeader="true" encoding="UTF-8">sin
+-2.72
+-5.00
+-2.68
+2.10
+4.95
+3.25
+-1.44
+-4.81
+-3.75
+0.75
+4.56
+4.18
+-0.04
+-4.23
+-4.53
+-0.66
+3.81
+4.78
+1.35
+-3.32
+-4.94
+-2.02
+2.76
+5.00
+2.65
+-2.14
+-4.96
+-3.22
+1.48
+4.82</datasource>
+        <datasource id="dt" allowEmpty="true" type="txt" openRole="begin" source="static" columnDelimiter="tab" hasColumnHeader="true" encoding="UTF-8">text	x	y	w1	w2	h
+Orange	0.0	0.0	40.0	22.5	7.0
+Banana	2.5	0.0	30.0	11.5	7.0
+Grape	4.0	0.0	35.0	43.9	9.0
+Raspberry	-1.0	0.0	20.0	17.0	8.0
+Apple	3.18	0.0	16.0	15.0	9.0
+Tomato	4.7	0.0	50.0	38.5	9.0
+Carrot	6.2	0.0	41.0	40.0	5.0</datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="20.373">
+        <label id="6EERC" zValue="0" posX="0.000" posY="0.000" width="169.862" height="5.027" fontName="Ubuntu" fontSize="12" fontWeight="bold" alignment="36">Dynamic, data driven position and size demo</label>
+        <label id="YZDB5" zValue="1" posX="0.000" posY="9.525" width="117.475" height="9.525" fontName="Ubuntu" fontSize="10" alignment="1" wordbreak="true">The x, y position, the height and the width of the items can be managed by data source, parameter, script, or variable.</label>
+    </pageheader>
+    <pagefooter id="PF" height="10.000"/>
+    <details>
+        <detail id="Detail1" height="10.848" datasource="dt">
+            <items>
+                <rectangle id="YYQQW" zValue="0" posX="0.000" posY="0.000" width="88.900" height="7.938" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="no" fillColor="#aa007f"/>
+                <field id="VSB9B" typeId="131074" zValue="1" posX="1.587" posY="1.587" width="30.162" height="4.762" description="text" dynOffset="true" resource="datasource" fontName="Ubuntu" fontSize="10" alignment="1" type="txt" ftype="ds">text</field>
+                <rectangle id="B9BUN" zValue="2" posX="103.188" posY="0.000" width="30.162" height="4.762" dynWidth="$D{w1}" dynHeight="4.7625" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#00aaff"/>
+                <field id="B9BUN" typeId="131074" zValue="3" posX="68.263" posY="1.587" width="7.938" height="4.762" description="x" resource="datasource" fontName="Ubuntu" fontSize="10" alignment="1" type="txt" ftype="ds">x</field>
+                <field id="BCE39" typeId="131074" zValue="4" posX="77.787" posY="1.587" width="7.938" height="4.762" description="y" resource="datasource" fontName="Ubuntu" fontSize="10" alignment="1" type="txt" ftype="ds">y</field>
+                <field id="KF7T7" typeId="131074" zValue="5" posX="88.900" posY="0.000" width="12.700" height="4.762" resource="datasource" fontName="Ubuntu" fontSize="10" fontWeight="bold" alignment="34" type="txt" ftype="ds">w1</field>
+                <field id="UHBRP" typeId="131074" zValue="6" posX="88.900" posY="4.762" width="12.700" height="4.762" description="w" resource="datasource" fontName="Ubuntu" fontSize="10" fontWeight="bold" alignment="34" type="txt" ftype="ds">w2</field>
+                <rectangle id="M578F" zValue="7" posX="103.188" posY="4.762" width="17.462" height="4.762" dynWidth="$D{w2}" dynHeight="4.7625" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#0000ff"/>
+                <ellipse id="HFMKP" zValue="8" posX="38.100" posY="1.587" width="4.762" height="4.762" dynPosX="$D{x}" dynOffset="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#aa007f"/>
+                <line id="XBOLF" zValue="9" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="34.925" fromY="0.000" toX="34.925" toY="7.938"/>
+            </items>
+        </detail>
+        <detail id="Detail2" height="8.996" datasource="dt2">
+            <items>
+                <rectangle id="JDC7O" zValue="0" posX="14.287" posY="0.000" width="7.938" height="7.938" dynPosX="$D{sin}" dynOffset="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#ffaa00"/>
+                <rectangle id="B9BUN" zValue="1" posX="122.237" posY="0.000" width="4.762" height="4.762" dynPosX="&lt;% $D{sin}*2 %&gt;" dynOffset="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#aa0000"/>
+            </items>
+        </detail>
+    </details>
+</NCReport>

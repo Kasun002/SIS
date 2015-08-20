@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-05-09T20:42:53
+# Project created by QtCreator 2015-06-10T11:52:15
 #
 #-------------------------------------------------
 
@@ -13,17 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    registeruser.cpp \
-    newshipdetect.cpp \
-    controller.cpp
+        mainwindow.cpp
 
-HEADERS  += mainwindow.h \
-    registeruser.h \
-    newshipdetect.h \
-    controller.h
+HEADERS  += mainwindow.h
 
-FORMS    += mainwindow.ui \
-    registeruser.ui \
-    newshipdetect.ui \
-    controller.ui
+FORMS    += mainwindow.ui
